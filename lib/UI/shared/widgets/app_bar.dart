@@ -12,20 +12,28 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
-      color: Colors.black87,
+      color: Color(0xff131313),
       child: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Image.asset(
+                'assets/images/gamepass-logo.png',
+                fit: BoxFit.contain,
+              ),
+            ),
             IconButton(
               onPressed: onIconPressed,
-              iconSize: 28,
-              splashRadius: 24,
+              iconSize: 24,
+              splashRadius: 20,
               icon: Icon(
                 this.iconName,
                 color: Colors.white,
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -34,4 +42,6 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => new AppBar().preferredSize;
+
+  Brightness get brightness => Brightness.dark;
 }

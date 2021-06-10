@@ -16,10 +16,10 @@ class HomePage extends StatelessWidget {
         height: double.maxFinite,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
+            begin: Alignment(0.0, -0.95),
             end: Alignment.bottomCenter,
             colors: [
-              Colors.black87,
+              Color(0xff131313),
               Colors.greenAccent.shade400,
             ],
           ),
