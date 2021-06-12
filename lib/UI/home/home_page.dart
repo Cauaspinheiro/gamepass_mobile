@@ -12,15 +12,14 @@ class HomePage extends StatelessWidget {
         onIconPressed: () {},
       ),
       body: Container(
-        width: double.maxFinite,
-        height: double.maxFinite,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment(0.0, -0.95),
-            end: Alignment.bottomCenter,
+          gradient: RadialGradient(
+            center: Alignment(0.0, -0.70),
+            radius: 1,
+            focal: Alignment.topCenter,
             colors: [
+              Color(0xff018647),
               Color(0xff131313),
-              Colors.greenAccent.shade400,
             ],
           ),
         ),

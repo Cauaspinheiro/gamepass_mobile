@@ -17,7 +17,16 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
     return Container(
       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
-      color: Color(0xff131313),
+      decoration: BoxDecoration(
+        color: Color(0xff131313),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 8,
+            offset: Offset(0, 4),
+            color: Color.fromRGBO(0, 0, 0, .4),
+          ),
+        ],
+      ),
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
