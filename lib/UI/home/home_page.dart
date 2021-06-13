@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gamepass_clone/UI/home/widgets/games_list_widget.dart';
 import 'package:gamepass_clone/UI/shared/widgets/app_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
         onIconPressed: () {},
       ),
       body: Container(
+        height: double.maxFinite,
         decoration: BoxDecoration(
           gradient: RadialGradient(
             center: Alignment(0.0, -0.70),
@@ -23,15 +25,24 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-        child: Center(
-          child: Text(
-            'Xbox Gamepass',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
+        child: ListView(
+          padding: EdgeInsets.only(top: 16),
+          children: [
+            GamesListWidget(
+              title: 'ADICIONADOS',
+              initialPadding: 12,
             ),
-          ),
+            SizedBox(height: 15),
+            GamesListWidget(
+              title: 'MAIS POPULARES',
+              initialPadding: 12,
+            ),
+            SizedBox(height: 14),
+            GamesListWidget(
+              title: 'AÇÃO',
+              initialPadding: 12,
+            ),
+          ],
         ),
       ),
     );
