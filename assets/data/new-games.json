@@ -1,0 +1,65 @@
+{
+  "title": "NOVOS JOGOS",
+  "games": [
+    {
+      "title": "Yakuza: Like a Dragon",
+      "publisher": "SEGA",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.38127.14427542363794747.182f58ca-3a24-4a65-93bd-cdd320a35776.aa29ae9b-d910-4213-984c-6e3c5dd828f3"
+    },
+    {
+      "title": "Wolfenstein® II: The New Colossus™",
+      "publisher": "Bethesda Softworks",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.16870.66681981221768345.76a0e962-989c-428d-a0d4-5b11187fa034.dc854494-6300-43e4-962b-2acb344965f8"
+    },
+    {
+      "title": "DOOM",
+      "publisher": "‪Bethesda Softworks‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.18860.66773763610413114.5c7115ed-b566-4d24-80ce-7027cb5b7c3e.e1d91fd3-d9ed-4be4-aedf-437e5d9820fe"
+    },
+    {
+      "title": "FOR HONOR™ Standard Edition",
+      "publisher": "Ubisoft",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.17913.66061984908082265.00884c53-4850-4a2a-8e92-43e3b03bb0dc.834b0cfc-cc7a-44ab-a5ef-2fdfe42bbcaa"
+    },
+    {
+      "title": "Maneater",
+      "publisher": "‪Tripwire Interactive LLC‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.57648.14572536018362984.944e7368-3c2f-4b4e-8072-fe5da70a10fa.d746edf2-6869-4be5-8fbe-30005b4db753"
+    },
+    {
+      "title": "New Super Lucky's Tale",
+      "publisher": "‪Playful Studios‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.8674.13867280688858311.8624d86c-7857-440e-9303-9897a29ba67e.880b9696-aef3-4a6c-9f08-46923c5546d5"
+    },
+    {
+      "title": "OUTRIDERS",
+      "publisher": "‪Square Enix Ltd‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.10712.64676761359365869.23ae6d7f-e795-4e0d-805f-b3b54879666e.f6f5d5f9-9464-4154-936a-13e8bc0df0bc"
+    },
+    {
+      "title": "The Outer Worlds",
+      "publisher": "‪Private Division‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.19260.71127714305215144.dfbe21c8-4e10-4861-b737-47393066d41d.e4e4e15c-dc47-4608-80a4-564c7284796a"
+    },
+    {
+      "title": "Streets of Rage 4",
+      "publisher": "Dotemu‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.10693.14069309968707701.a188f5d6-70d3-461d-9589-070aaa69ac0b.7e5a19b6-1444-4390-8a31-ebb2fbd992c6"
+    },
+    {
+      "title": "Ori and the Will of the Wisps",
+      "publisher": "‪Xbox Game Studios‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.18799.14047496556148589.9fda5cef-7995-4dbb-a626-66d2ab3feb4f.1e167626-8b7d-47b4-9fe5-d06a43ac6677"
+    },
+    {
+      "title": "Minecraft Dungeons",
+      "publisher": "‪Xbox Game Studios‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.2957.14045794648370014.2229d39b-90c3-496e-8fac-9987450ca4d8.680871e0-da2a-4109-8e2c-4bc75b2d56f8"
+    },
+    {
+      "title": "MLB® The Show™ 21",
+      "publisher": "MLB‬",
+      "image_url": "https://store-images.s-microsoft.com/image/apps.39869.14365272490116155.0cf0037b-3b16-479b-8356-a27f81872c70.053fb622-9c36-48e2-ab51-f30412087014"
+    }
+  ]
+}
