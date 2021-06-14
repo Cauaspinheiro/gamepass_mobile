@@ -64,13 +64,16 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildHome() {
+    const DEFAULT_ITEMS_PADDING = 16.0;
+
     return ListView(
-      padding: EdgeInsets.symmetric(vertical: 16),
+      padding: EdgeInsets.symmetric(vertical: DEFAULT_ITEMS_PADDING),
       children: [
-        GamesListWidget(
-          initialPadding: 12,
-          gameList: gameList!,
-        ),
+        GamesListWidget(gameList: gameList!),
+        SizedBox(height: DEFAULT_ITEMS_PADDING),
+        GamesListWidget(gameList: gameList!),
+        SizedBox(height: DEFAULT_ITEMS_PADDING),
+        GamesListWidget(gameList: gameList!),
       ],
     );
   }
