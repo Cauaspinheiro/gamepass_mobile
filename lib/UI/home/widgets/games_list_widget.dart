@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gamepass_clone/UI/shared/utils/resize_api_image.dart';
 import 'package:gamepass_clone/domain/game/game_list.dart';
 
 class GamesListWidget extends StatelessWidget {
@@ -39,27 +40,27 @@ class GamesListWidget extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               final game = gameList.games[index];
-              final formattedWidth = (itemHeight * 1.8).toInt();
-              final formattedHeight = (itemHeight * 1.8).toInt();
-
-              final formattedUrl =
-                  '${game.imageUrl}?mode=scale&h=$formattedHeight&w=$formattedWidth';
 
               return Container(
-                margin: EdgeInsets.only(bottom: 8, right: 6),
+                margin: EdgeInsets.only(bottom: 8, right: 8),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(6.0)),
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.black87,
-                          blurRadius: 4,
-                          offset: Offset(0, 2)),
+                        color: Colors.black87,
+                        blurRadius: 4,
+                        offset: Offset(0, 2),
+                      )
                     ]),
                 width: itemWidth,
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(6.0)),
                   child: Image.network(
-                    formattedUrl,
+                    resizeApiImage(
+                      imageUrl: game.imageUrl,
+                      width: itemWidth,
+                      height: itemHeight,
+                    ),
                     fit: BoxFit.cover,
                   ),
                 ),
