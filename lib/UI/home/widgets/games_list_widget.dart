@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:gamepass_clone/domain/game/game_list.dart';
 
 class GamesListWidget extends StatelessWidget {
   final double? initialPadding;
-  final String title;
+  final GameList gameList;
 
-  const GamesListWidget({Key? key, this.initialPadding, required this.title})
-      : super(key: key);
+  const GamesListWidget({
+    Key? key,
+    this.initialPadding,
+    required this.gameList,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final itemWidth = MediaQuery.of(context).size.width / 2.4;
+    final itemWidth = MediaQuery.of(context).size.width / 2.5;
     final itemHeight = itemWidth * 1.5;
 
     return Column(
@@ -17,11 +21,11 @@ class GamesListWidget extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.only(
-            bottom: 6.0,
+            bottom: 8.0,
             left: this.initialPadding ?? 0,
           ),
           child: Text(
-            this.title.toUpperCase(),
+            this.gameList.title.toUpperCase(),
             style: TextStyle(
               color: Colors.white,
               fontSize: 16,
@@ -36,13 +40,16 @@ class GamesListWidget extends StatelessWidget {
               left: this.initialPadding ?? 0,
               right: this.initialPadding != null ? this.initialPadding! - 6 : 0,
             ),
-            itemCount: 12,
+            itemCount: gameList.games.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
+              final game = gameList.games[index];
+
               return Container(
-                margin: EdgeInsets.only(right: 6),
+                margin: EdgeInsets.only(right: 8),
                 width: itemWidth,
                 color: Colors.black45,
+                child: Image.network(game.imageUrl),
               );
             },
           ),
