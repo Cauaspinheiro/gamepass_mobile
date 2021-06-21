@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/UI/shared/utils/resize_api_image.dart';
-import 'package:gamepass_clone/domain/game/game_list.dart';
+import 'package:gamepass_clone/domain/games_list.dart';
+
+import 'game_item_widget.dart';
 
 class GamesListWidget extends StatelessWidget {
-  final GameList gameList;
+  final GamesList gameList;
 
   const GamesListWidget({
     Key? key,
@@ -41,33 +42,14 @@ class GamesListWidget extends StatelessWidget {
             itemBuilder: (context, index) {
               final game = gameList.games[index];
 
-              return Container(
-                margin: EdgeInsets.only(bottom: 8, right: 8),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(6.0)),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black87,
-                        blurRadius: 4,
-                        offset: Offset(0, 2),
-                      )
-                    ]),
-                width: itemWidth,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(6.0)),
-                  child: Image.network(
-                    resizeApiImage(
-                      imageUrl: game.imageUrl,
-                      width: itemWidth,
-                      height: itemHeight,
-                    ),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              );
+              return GameItemWidget(
+                  itemWidth: itemWidth,
+                  game: game,
+                  itemHeight: itemHeight,
+                  margin: EdgeInsets.only(bottom: 8, right: 8));
             },
           ),
-        ),
+        )
       ],
     );
   }

@@ -1,29 +1,19 @@
-import 'dart:convert';
-
-import 'package:gamepass_clone/domain/game/game.dart';
+import 'package:gamepass_clone/domain/game.dart';
+import 'package:gamepass_clone/infra/game/game_repository_dto.dart';
+import 'package:gamepass_clone/infra/rating/rating_model.dart';
 
 class GameModel {
-  Game game;
-
-  GameModel(this.game);
-
-  Map<String, dynamic> toMap() {
-    return {
-      'title': game.title,
-      'publisher': game.publisher,
-      'imageUrl': game.imageUrl,
-    };
-  }
-
-  static Game fromMap(Map<String, dynamic> map) {
-    return Game(
-      title: map['title'],
-      publisher: map['publisher'],
-      imageUrl: map['image_url'],
+  static Game fromRepository(GameRepositoryDTO data) {
+    return new Game(
+      id: data.id,
+      description: data.description,
+      logo: data.logo,
+      publisher: data.publisher,
+      rating: RatingModel.fromRepository(data.rating),
+      ratingReasons: data.rating_reasons,
+      size: data.size,
+      title: data.title,
+      trailer: data.trailer,
     );
   }
-
-  String toJson() => json.encode(toMap());
-
-  static Game fromJson(String source) => fromMap(json.decode(source));
 }

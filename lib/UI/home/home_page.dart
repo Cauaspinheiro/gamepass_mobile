@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gamepass_clone/UI/home/widgets/game_item_widget.dart';
 import 'package:gamepass_clone/UI/home/widgets/games_list_widget.dart';
 import 'package:gamepass_clone/UI/shared/widgets/app_bar.dart';
-import 'package:gamepass_clone/domain/game/game_list.dart';
-import 'package:gamepass_clone/infra/game/game_list_repository.dart';
+import 'package:gamepass_clone/app/page_content_use_case.dart';
+import 'package:gamepass_clone/domain/page_content.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool loading = true;
-  GameList? gameList;
+  late PageContent pageContent;
 
   @override
   void initState() {
@@ -23,10 +24,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   void getGames() async {
-    final games = await GameListRepository.getHomeGames();
+    final newPageContent = await PageContentUseCase().findByTitle('home');
 
     setState(() {
-      gameList = games;
+      pageContent = newPageContent;
       loading = false;
     });
   }
@@ -64,17 +65,42 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildHome() {
-    const DEFAULT_ITEMS_PADDING = 16.0;
-
     return ListView(
-      padding: EdgeInsets.symmetric(vertical: DEFAULT_ITEMS_PADDING),
+      padding: EdgeInsets.symmetric(vertical: 16),
       children: [
-        GamesListWidget(gameList: gameList!),
-        SizedBox(height: DEFAULT_ITEMS_PADDING),
-        GamesListWidget(gameList: gameList!),
-        SizedBox(height: DEFAULT_ITEMS_PADDING),
-        GamesListWidget(gameList: gameList!),
+        Column(
+          children: [
+            GameItemWidget(
+              itemWidth: MediaQuery.of(context).size.width - 32,
+              game: pageContent.spotlight,
+              itemHeight: (MediaQuery.of(context).size.width - 32) * 1.2,
+            ),
+          ],
+        ),
+        SizedBox(height: 32),
+        ..._buildGamesLists(),
       ],
     );
+  }
+
+  List<Widget> _buildGamesLists() {
+    var listIndex = 0;
+    List<Widget> result = [];
+
+    for (var i = 0; i < pageContent.gamesLists.length * 2 - 1; i++) {
+      if (i % 2 == 0) {
+        result.add(
+          GamesListWidget(gameList: pageContent.gamesLists[listIndex]),
+        );
+        listIndex++;
+        continue;
+      }
+
+      result.add(SizedBox(
+        height: 16,
+      ));
+    }
+
+    return result;
   }
 }
