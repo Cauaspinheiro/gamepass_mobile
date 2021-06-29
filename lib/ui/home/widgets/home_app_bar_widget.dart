@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:gamepass_clone/UI/theme/images.dart';
 
 class HomeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -7,10 +6,6 @@ class HomeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarIconBrightness: Brightness.light,
-    ));
-
     return Container(
       padding: EdgeInsets.symmetric(vertical: 16, horizontal: 14),
       child: SafeArea(
@@ -19,8 +14,8 @@ class HomeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              alignment: Alignment.centerLeft,
-              width: 160,
+              alignment: Alignment.center,
+              width: 200,
               child: Image.asset(ThemeImages.logo),
             ),
           ],
