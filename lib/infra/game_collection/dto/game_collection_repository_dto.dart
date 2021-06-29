@@ -1,13 +1,13 @@
 import 'dart:convert';
 
-import 'package:gamepass_clone/infra/game/game_repository_dto.dart';
+import 'package:gamepass_clone/infra/game/dto/game_repository_dto.dart';
 
-class GamesListRepositoryDTO {
+class GameCollectionRepositoryDTO {
   String id;
   String title;
   List<GameRepositoryDTO> games;
 
-  GamesListRepositoryDTO({
+  GameCollectionRepositoryDTO({
     required this.id,
     required this.title,
     required this.games,
@@ -21,8 +21,8 @@ class GamesListRepositoryDTO {
     };
   }
 
-  factory GamesListRepositoryDTO.fromMap(Map<String, dynamic> map) {
-    return GamesListRepositoryDTO(
+  factory GameCollectionRepositoryDTO.fromMap(Map<String, dynamic> map) {
+    return GameCollectionRepositoryDTO(
       id: map['id'],
       title: map['title'],
       games: List<GameRepositoryDTO>.from(
@@ -33,6 +33,6 @@ class GamesListRepositoryDTO {
 
   String toJson() => json.encode(toMap());
 
-  factory GamesListRepositoryDTO.fromJson(String source) =>
-      GamesListRepositoryDTO.fromMap(json.decode(source));
+  factory GameCollectionRepositoryDTO.fromJson(String source) =>
+      GameCollectionRepositoryDTO.fromMap(json.decode(source));
 }

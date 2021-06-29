@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/domain/games_list.dart';
+import 'package:gamepass_clone/domain/game_collection.dart';
 
 import 'game_item_widget.dart';
 
-class GamesListWidget extends StatelessWidget {
-  final GamesList gameList;
+class GameCollectionWidget extends StatelessWidget {
+  final GameCollection gameCollection;
 
-  const GamesListWidget({
+  const GameCollectionWidget({
     Key? key,
-    required this.gameList,
+    required this.gameCollection,
   }) : super(key: key);
 
   @override
@@ -22,7 +22,7 @@ class GamesListWidget extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(bottom: 8, left: 12),
           child: Text(
-            this.gameList.title.toUpperCase(),
+            this.gameCollection.title.toUpperCase(),
             style: TextStyle(
               color: Colors.white,
               fontSize: 15,
@@ -37,16 +37,17 @@ class GamesListWidget extends StatelessWidget {
               left: 12,
               right: 6,
             ),
-            itemCount: gameList.games.length,
+            itemCount: gameCollection.games.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              final game = gameList.games[index];
+              final game = gameCollection.games[index];
 
               return GameItemWidget(
-                  itemWidth: itemWidth,
-                  game: game,
-                  itemHeight: itemHeight,
-                  margin: EdgeInsets.only(bottom: 8, right: 8));
+                itemWidth: itemWidth,
+                game: game,
+                itemHeight: itemHeight,
+                margin: EdgeInsets.only(bottom: 8, right: 8),
+              );
             },
           ),
         )

@@ -1,0 +1,13 @@
+import 'package:gamepass_clone/domain/game_collection.dart';
+import 'package:gamepass_clone/infra/game/game_model.dart';
+import 'package:gamepass_clone/infra/game_collection/dto/game_collection_repository_dto.dart';
+
+class GameCollectionModel {
+  static GameCollection fromRepository(GameCollectionRepositoryDTO data) {
+    return new GameCollection(
+      games: data.games.map((e) => GameModel.fromRepository(e)).toList(),
+      title: data.title,
+      id: data.id,
+    );
+  }
+}

@@ -21,7 +21,7 @@ class GameItemWidget extends StatelessWidget {
     return Container(
       margin: this.margin,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(6.0)),
+          borderRadius: BorderRadius.all(Radius.circular(2.0)),
           boxShadow: [
             BoxShadow(
               color: Colors.black87,
@@ -32,7 +32,7 @@ class GameItemWidget extends StatelessWidget {
       width: itemWidth,
       height: itemHeight + 4,
       child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(6.0)),
+        borderRadius: BorderRadius.all(Radius.circular(2.0)),
         child: Image.network(
           resizeApiImage(
             imageUrl: game.logo,
