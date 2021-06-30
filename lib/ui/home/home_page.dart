@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildLoading() {
     return Center(
-      child: CircularProgressIndicator(color: Colors.white54),
+      child: CircularProgressIndicator(color: ThemeColors.content),
     );
   }
 
@@ -100,19 +100,16 @@ class _HomePageState extends State<HomePage> {
     List<Widget> result = [];
 
     for (var i = 0; i < pageContent.gameCollections.length * 2 - 1; i++) {
-      if (i % 2 == 0) {
+      if (i.isEven) {
         result.add(
           GameCollectionWidget(
             gameCollection: pageContent.gameCollections[listIndex],
           ),
         );
         listIndex++;
-        continue;
+      } else {
+        result.add(SizedBox(height: 16));
       }
-
-      result.add(SizedBox(
-        height: 16,
-      ));
     }
 
     return result;
