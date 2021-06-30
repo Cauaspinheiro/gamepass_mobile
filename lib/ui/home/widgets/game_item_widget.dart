@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gamepass_clone/UI/shared/utils/resize_api_image.dart';
 import 'package:gamepass_clone/domain/game.dart';
+import 'package:gamepass_clone/ui/game/game_page.dart';
 
 class GameItemWidget extends StatelessWidget {
   const GameItemWidget({
@@ -18,28 +19,39 @@ class GameItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: this.margin,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(2.0)),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black,
-              blurRadius: 2,
-              offset: Offset(0, 2),
-            )
-          ]),
-      width: itemWidth,
-      height: itemHeight + 4,
-      child: ClipRRect(
-        borderRadius: BorderRadius.all(Radius.circular(2.0)),
-        child: Image.network(
-          resizeApiImage(
-            imageUrl: game.logo,
-            width: itemWidth,
-            height: itemHeight,
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => GamePage(
+              game: game,
+            ),
           ),
-          fit: BoxFit.cover,
+        );
+      },
+      child: Container(
+        margin: this.margin,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(2.0)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black,
+                blurRadius: 2,
+                offset: Offset(0, 2),
+              )
+            ]),
+        width: itemWidth,
+        height: itemHeight + 4,
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(2.0)),
+          child: Image.network(
+            resizeApiImage(
+              imageUrl: game.logo,
+              width: itemWidth,
+              height: itemHeight,
+            ),
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );

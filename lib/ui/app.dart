@@ -10,6 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Xbox Game Pass',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: ThemeColors.background,
         primarySwatch: Colors.grey,

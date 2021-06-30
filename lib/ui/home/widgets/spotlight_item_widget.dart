@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'package:gamepass_clone/domain/spotlight.dart';
+import 'package:gamepass_clone/ui/game/game_page.dart';
 import 'package:gamepass_clone/ui/theme/fonts.dart';
 
 class SpotlightItemWidget extends StatelessWidget {
@@ -39,38 +40,47 @@ class SpotlightItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: this.margin,
-      width: itemWidth,
-      height: itemHeight + 4,
-      alignment: Alignment.bottomLeft,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: NetworkImage(spotlight.spotlightCover),
-        ),
-      ),
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => GamePage(game: spotlight),
+          ),
+        );
+      },
       child: Container(
+        margin: this.margin,
+        width: itemWidth,
+        height: itemHeight + 4,
+        alignment: Alignment.bottomLeft,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.transparent, Colors.black],
-            begin: Alignment.topCenter,
-            end: Alignment(0, 0.9),
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: NetworkImage(spotlight.spotlightCover),
           ),
         ),
-        width: itemWidth,
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Text(
-              spotlight.spotlightTitle.toUpperCase(),
-              style: ThemeFonts.spotlightTitle,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.transparent, Colors.black],
+              begin: Alignment.topCenter,
+              end: Alignment(0, 0.9),
             ),
-            SizedBox(height: 4),
-            Text(_getDescription(), style: ThemeFonts.spotlightDescription),
-          ],
+          ),
+          width: itemWidth,
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(
+                spotlight.spotlightTitle.toUpperCase(),
+                style: ThemeFonts.spotlightTitle,
+              ),
+              SizedBox(height: 4),
+              Text(_getDescription(), style: ThemeFonts.primaryContent),
+            ],
+          ),
         ),
       ),
     );

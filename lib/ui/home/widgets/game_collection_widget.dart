@@ -28,7 +28,7 @@ class GameCollectionWidget extends StatelessWidget {
             children: [
               Text(
                 this.gameCollection.title.toUpperCase(),
-                style: ThemeFonts.collectionTitle,
+                style: ThemeFonts.primaryTitle,
               ),
               Container(
                 height: 1,
