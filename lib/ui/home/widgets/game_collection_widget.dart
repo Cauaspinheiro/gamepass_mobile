@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gamepass_clone/domain/game_collection.dart';
+import 'package:gamepass_clone/ui/theme/colors.dart';
+import 'package:gamepass_clone/ui/theme/fonts.dart';
 
 import 'game_item_widget.dart';
 
@@ -21,13 +23,20 @@ class GameCollectionWidget extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.only(bottom: 8, left: 14),
-          child: Text(
-            this.gameCollection.title.toUpperCase(),
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                this.gameCollection.title.toUpperCase(),
+                style: ThemeFonts.collectionTitle,
+              ),
+              Container(
+                height: 1,
+                width: 100,
+                color: ThemeColors.primary,
+                margin: EdgeInsets.only(top: 1),
+              )
+            ],
           ),
         ),
         Container(
@@ -35,7 +44,7 @@ class GameCollectionWidget extends StatelessWidget {
           child: ListView.builder(
             padding: EdgeInsets.only(
               left: 14,
-              right: 6,
+              right: 8,
             ),
             itemCount: gameCollection.games.length,
             scrollDirection: Axis.horizontal,
@@ -48,7 +57,7 @@ class GameCollectionWidget extends StatelessWidget {
                 itemHeight: itemHeight,
                 margin: EdgeInsets.only(
                   bottom: 6,
-                  right: 8,
+                  right: 6,
                 ),
               );
             },
