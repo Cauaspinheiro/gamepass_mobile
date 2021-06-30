@@ -24,8 +24,8 @@ class GameItemWidget extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(2.0)),
           boxShadow: [
             BoxShadow(
-              color: Colors.black87,
-              blurRadius: 4,
+              color: Colors.black,
+              blurRadius: 2,
               offset: Offset(0, 2),
             )
           ]),

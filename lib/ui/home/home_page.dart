@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gamepass_clone/app/use-cases/get_home_page_content.dart';
+import 'package:gamepass_clone/domain/game_collection.dart';
 import 'package:gamepass_clone/domain/home_page_content.dart';
 import 'package:gamepass_clone/ui/home/widgets/game_collection_widget.dart';
+import 'package:gamepass_clone/ui/home/widgets/game_item_widget.dart';
 import 'package:gamepass_clone/ui/home/widgets/home_app_bar_widget.dart';
+import 'package:gamepass_clone/ui/home/widgets/spotlights_collection_widget.dart';
 import 'package:gamepass_clone/ui/theme/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,21 +37,33 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            ThemeColors.primary,
-            ThemeColors.background,
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment(0, -.5),
-        ),
-      ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: HomeAppBarWidget(),
-        body: loading ? _buildLoading() : _buildHome(),
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(
+        alignment: Alignment.topCenter,
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  ThemeColors.background,
+                  ThemeColors.primary.withOpacity(.75),
+                ],
+                begin: FractionalOffset(0.5, .45),
+                end: Alignment(0.5, 1.6),
+                stops: [0, 1],
+              ),
+            ),
+            child: loading ? _buildLoading() : _buildHome(),
+          ),
+          Positioned(
+            top: 0,
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: HomeAppBarWidget(),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -61,10 +76,21 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildHome() {
     return ListView(
-      padding: EdgeInsets.symmetric(vertical: 16),
+      padding: EdgeInsets.only(top: 112, bottom: 16),
       children: [
-        SizedBox(height: 32),
+        SpotlightCollectionWidget(
+          spotlightCollection: pageContent.spotlights,
+        ),
+        SizedBox(height: 20),
         ..._buildGameCollections(),
+        SizedBox(height: 16),
+        GameCollectionWidget(
+          gameCollection: GameCollection(
+            games: pageContent.games,
+            id: '12',
+            title: 'todos os jogos',
+          ),
+        )
       ],
     );
   }
