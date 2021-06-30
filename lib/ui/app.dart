@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       title: 'Xbox Game Pass',
       theme: ThemeData(
         primaryColor: ThemeColors.background,
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.grey,
       ),
       home: HomePage(),
     );

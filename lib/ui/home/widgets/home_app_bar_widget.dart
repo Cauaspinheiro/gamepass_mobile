@@ -12,9 +12,9 @@ class HomeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     return ClipRect(
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 16, horizontal: 14),
-        color: ThemeColors.background.withOpacity(.80),
+        color: ThemeColors.background.withOpacity(.60),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 1.5),
+          filter: ImageFilter.blur(sigmaX: 3, sigmaY: 2),
           child: SafeArea(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
