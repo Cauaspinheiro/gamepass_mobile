@@ -3,7 +3,6 @@ import 'package:gamepass_clone/app/use-cases/get_home_page_content.dart';
 import 'package:gamepass_clone/domain/game_collection.dart';
 import 'package:gamepass_clone/domain/home_page_content.dart';
 import 'package:gamepass_clone/ui/home/widgets/game_collection_widget.dart';
-import 'package:gamepass_clone/ui/home/widgets/game_item_widget.dart';
 import 'package:gamepass_clone/ui/home/widgets/home_app_bar_widget.dart';
 import 'package:gamepass_clone/ui/home/widgets/spotlights_collection_widget.dart';
 import 'package:gamepass_clone/ui/theme/colors.dart';
