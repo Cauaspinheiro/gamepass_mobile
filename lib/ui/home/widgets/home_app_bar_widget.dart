@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/UI/theme/images.dart';
-import 'package:gamepass_clone/ui/theme/colors.dart';
+import 'package:gamepass/UI/theme/images.dart';
+import 'package:gamepass/ui/theme/colors.dart';
 
 class HomeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBarWidget({Key? key}) : super(key: key);

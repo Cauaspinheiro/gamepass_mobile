@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/ui/game/widgets/trailer_player_widget.dart';
+import 'package:gamepass/ui/game/widgets/trailer_player_widget.dart';
 
-import 'package:gamepass_clone/domain/game.dart';
-import 'package:gamepass_clone/ui/theme/colors.dart';
-import 'package:gamepass_clone/ui/theme/fonts.dart';
+import 'package:gamepass/domain/game.dart';
+import 'package:gamepass/ui/theme/colors.dart';
+import 'package:gamepass/ui/theme/fonts.dart';
 
 class GamePage extends StatefulWidget {
   final Game game;

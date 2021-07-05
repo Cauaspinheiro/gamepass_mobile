@@ -1,5 +1,5 @@
-import 'package:gamepass_clone/domain/game.dart';
-import 'package:gamepass_clone/domain/rating.dart';
+import 'package:gamepass/domain/game.dart';
+import 'package:gamepass/domain/rating.dart';
 
 class Spotlight extends Game {
   String spotlightTitle;

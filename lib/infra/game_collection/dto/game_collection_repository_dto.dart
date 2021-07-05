@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:gamepass_clone/infra/game/dto/game_repository_dto.dart';
+import 'package:gamepass/infra/game/dto/game_repository_dto.dart';
 
 class GameCollectionRepositoryDTO {
   String id;

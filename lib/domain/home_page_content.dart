@@ -1,6 +1,6 @@
-import 'package:gamepass_clone/domain/game.dart';
-import 'package:gamepass_clone/domain/game_collection.dart';
-import 'package:gamepass_clone/domain/spotlight_collection.dart';
+import 'package:gamepass/domain/game.dart';
+import 'package:gamepass/domain/game_collection.dart';
+import 'package:gamepass/domain/spotlight_collection.dart';
 
 class HomePageContent {
   List<GameCollection> gameCollections;

@@ -1,4 +1,4 @@
-import 'package:gamepass_clone/domain/rating.dart';
+import 'package:gamepass/domain/rating.dart';
 
 class Game {
   String id;

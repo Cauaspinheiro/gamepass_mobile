@@ -1,6 +1,6 @@
-import 'package:gamepass_clone/domain/spotlight.dart';
-import 'package:gamepass_clone/infra/rating/rating_model.dart';
-import 'package:gamepass_clone/infra/spotlight/dto/spotlight_repository_dto.dart';
+import 'package:gamepass/domain/spotlight.dart';
+import 'package:gamepass/infra/rating/rating_model.dart';
+import 'package:gamepass/infra/spotlight/dto/spotlight_repository_dto.dart';
 
 class SpotlightModel {
   static Spotlight fromRepository(SpotlightRepositoryDTO data) {

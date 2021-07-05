@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'package:gamepass_clone/domain/spotlight.dart';
-import 'package:gamepass_clone/ui/game/game_page.dart';
-import 'package:gamepass_clone/ui/theme/fonts.dart';
+import 'package:gamepass/domain/spotlight.dart';
+import 'package:gamepass/ui/game/game_page.dart';
+import 'package:gamepass/ui/theme/fonts.dart';
 
 class SpotlightItemWidget extends StatelessWidget {
   final double itemWidth;

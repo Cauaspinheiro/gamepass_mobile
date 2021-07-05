@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/domain/spotlight_collection.dart';
-import 'package:gamepass_clone/ui/home/widgets/spotlight_item_widget.dart';
+import 'package:gamepass/domain/spotlight_collection.dart';
+import 'package:gamepass/ui/home/widgets/spotlight_item_widget.dart';
 
 class SpotlightCollectionWidget extends StatelessWidget {
   final SpotLightCollection spotlightCollection;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/domain/game_collection.dart';
-import 'package:gamepass_clone/ui/theme/colors.dart';
-import 'package:gamepass_clone/ui/theme/fonts.dart';
+import 'package:gamepass/domain/game_collection.dart';
+import 'package:gamepass/ui/theme/colors.dart';
+import 'package:gamepass/ui/theme/fonts.dart';
 
 import 'game_item_widget.dart';
 

@@ -1,5 +1,5 @@
-import 'package:gamepass_clone/domain/rating.dart';
-import 'package:gamepass_clone/infra/rating/dto/rating_repository_dto.dart';
+import 'package:gamepass/domain/rating.dart';
+import 'package:gamepass/infra/rating/dto/rating_repository_dto.dart';
 
 class RatingModel {
   static Rating fromRepository(RatingRepositoryDTO data) {

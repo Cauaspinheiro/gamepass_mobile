@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/UI/shared/utils/resize_api_image.dart';
-import 'package:gamepass_clone/domain/game.dart';
-import 'package:gamepass_clone/ui/game/game_page.dart';
+import 'package:gamepass/UI/shared/utils/resize_api_image.dart';
+import 'package:gamepass/domain/game.dart';
+import 'package:gamepass/ui/game/game_page.dart';
 
 class GameItemWidget extends StatelessWidget {
   const GameItemWidget({

@@ -1,6 +1,6 @@
-import 'package:gamepass_clone/domain/spotlight_collection.dart';
-import 'package:gamepass_clone/infra/spotlight/spotlight_model.dart';
-import 'package:gamepass_clone/infra/spotlight_collection/dto/spotlight_collection_repository_dto.dart';
+import 'package:gamepass/domain/spotlight_collection.dart';
+import 'package:gamepass/infra/spotlight/spotlight_model.dart';
+import 'package:gamepass/infra/spotlight_collection/dto/spotlight_collection_repository_dto.dart';
 
 class SpotlightCollectionModel {
   static SpotLightCollection fromRepository(

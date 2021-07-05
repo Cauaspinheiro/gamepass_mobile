@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:gamepass_clone/infra/spotlight/dto/spotlight_repository_dto.dart';
+import 'package:gamepass/infra/spotlight/dto/spotlight_repository_dto.dart';
 
 class SpotlightCollectionRepositoryDTO {
   List<SpotlightRepositoryDTO> games;

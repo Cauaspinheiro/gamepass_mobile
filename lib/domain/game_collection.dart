@@ -1,4 +1,4 @@
-import 'package:gamepass_clone/domain/game.dart';
+import 'package:gamepass/domain/game.dart';
 
 class GameCollection {
   List<Game> games;

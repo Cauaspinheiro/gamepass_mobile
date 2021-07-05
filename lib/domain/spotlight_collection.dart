@@ -1,4 +1,4 @@
-import 'package:gamepass_clone/domain/spotlight.dart';
+import 'package:gamepass/domain/spotlight.dart';
 
 class SpotLightCollection {
   List<Spotlight> games;

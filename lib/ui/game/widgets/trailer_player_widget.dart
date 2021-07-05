@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-import 'package:gamepass_clone/ui/game/widgets/player_control_button.dart';
-import 'package:gamepass_clone/ui/shared/utils/get_youtube_id.dart';
+import 'package:gamepass/ui/game/widgets/player_control_button.dart';
+import 'package:gamepass/ui/shared/utils/get_youtube_id.dart';
 
 class TrailerPlayerWidget extends StatefulWidget {
   final String trailer;

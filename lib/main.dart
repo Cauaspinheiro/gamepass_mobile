@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/UI/app.dart';
+import 'package:gamepass/UI/app.dart';
 
 void main() {
   runApp(App());

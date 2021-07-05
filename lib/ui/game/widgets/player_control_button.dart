@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gamepass_clone/ui/theme/colors.dart';
+import 'package:gamepass/ui/theme/colors.dart';
 
 class PlayerControlButton extends StatelessWidget {
   final VoidCallback onTap;

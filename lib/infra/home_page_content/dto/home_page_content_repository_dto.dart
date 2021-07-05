@@ -1,6 +1,6 @@
-import 'package:gamepass_clone/infra/game/dto/game_repository_dto.dart';
-import 'package:gamepass_clone/infra/game_collection/dto/game_collection_repository_dto.dart';
-import 'package:gamepass_clone/infra/spotlight_collection/dto/spotlight_collection_repository_dto.dart';
+import 'package:gamepass/infra/game/dto/game_repository_dto.dart';
+import 'package:gamepass/infra/game_collection/dto/game_collection_repository_dto.dart';
+import 'package:gamepass/infra/spotlight_collection/dto/spotlight_collection_repository_dto.dart';
 
 class HomePageContentRepositoryDTO {
   List<GameRepositoryDTO> games;
