@@ -10,7 +10,7 @@
 
 A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game-pass) games library.
 
-> This app do not have any connection with the Xbox Game Pass official app and was made by educational purpose only. If you wanna see the real updated library please see the **official app**.
+> This app does not have any connection with the Xbox Game Pass official app and was made for educational purposes only. If you want to see the real updated library please download the **official app**.
 
 <!-- Prints / Outputs -->
 
@@ -18,7 +18,7 @@ A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game
 
 ## :video_game: Usage
 
-This app does not have any built app so far, if you wanna use the app you have to clone this repository locally and run the app yourself. For this, see the [Installation Topic](#construction_worker-installation).
+This app does not have any built app so far. If you want use the app you have to clone this repository locally and run the app yourself. For this, see the [Installation Topic](#construction_worker-installation).
 
 <!-- Installation -->
 
@@ -71,9 +71,9 @@ For this, see the ["Run the app" topic](https://flutter.dev/docs/get-started/tes
 
 The application supports only the ![BR](/.github/BR.png) Brazilian Portuguese language so far.
 
-The support for the English language is not planned.
+The support for the English language isn't planned.
 
-### Technologies
+<!-- ### Technologies -->
 
 <!-- ### Motivation -->
 
