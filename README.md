@@ -18,7 +18,7 @@ A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game
 
 ## :video_game: Usage
 
-This app does not have any built app so far, if you wanna use the app you have to clone this repository locally and run the app yourself. For this, see the [Installation Topic](#installation).
+This app does not have any built app so far, if you wanna use the app you have to clone this repository locally and run the app yourself. For this, see the [Installation Topic](#construction_worker-installation).
 
 <!-- Installation -->
 
@@ -65,9 +65,15 @@ For this, see the ["Run the app" topic](https://flutter.dev/docs/get-started/tes
 
 <!-- About the Project -->
 
-<!-- ### Available Languages -->
+## About the Project
 
-<!-- ### Technologies -->
+### Available Languages
+
+The application supports only the ![BR](/.github/BR.png) Brazilian Portuguese language so far.
+
+The support for the English language is not planned.
+
+### Technologies
 
 <!-- ### Motivation -->
 
