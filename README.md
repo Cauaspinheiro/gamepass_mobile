@@ -65,7 +65,7 @@ For this, see the ["Run the app" topic](https://flutter.dev/docs/get-started/tes
 
 <!-- About the Project -->
 
-## About the Project
+## :page_facing_up: About the Project
 
 ### Available Languages
 
@@ -73,13 +73,49 @@ The application supports only the ![BR](/.github/BR.png) Brazilian Portuguese la
 
 The support for the English language isn't planned.
 
-<!-- ### Technologies -->
+### Motivation
 
-<!-- ### Motivation -->
+This app was made to improve my flutter skills, besides the fact the official app was quite slow and with an annoying UI/UX.
 
-<!-- ### Architecture -->
+### Architecture
 
-<!-- ### License -->
+This app was built using the principles of [SOLID](https://en.wikipedia.org/wiki/SOLID) and [DDD](https://en.wikipedia.org/wiki/Domain-driven_design).
+
+For more details see the file [ARCHITECTURE.md](ARCHITECTURE.md)
+
+### License
+
+This project is licensed under the [MIT License](LICENSE)
+
+## :test_tube: Technologies
+
+![Flutter](https://buttercms.com/static/images/tech_banners/Flutter.2d1998a6f272.png)
+
+### Flutter
+
+Flutter is an open-source UI software development kit created by Google. It is used to develop cross-platform applications for Android, iOS, Linux, Mac, Windows, and the web from a single codebase. (Wikipedia)
+
+Website: https://flutter.dev/
+
+### Dart
+
+Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. (Wikipedia)
+
+Website: https://dart.dev/
+
+### Dependencies
+
+#### http
+
+A composable, Future-based library for making HTTP requests. (Official repository)
+
+github: https://github.com/dart-lang/http
+
+#### youtube_player_flutter
+
+Flutter plugin for playing or streaming YouTube videos inline using the official iFrame Player API. (Official repository)
+
+github: https://github.com/sarbagyastha/youtube_player_flutter
 
 <!-- Roadmap -->
 
