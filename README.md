@@ -105,6 +105,6 @@ flutter pub get
 
 For this, see the ["Run the app" topic](https://flutter.dev/docs/get-started/test-drive?tab=terminal) on Flutter's official documentation.
 
-<!-- Roadmap -->
+## :link: Useful Links
 
-<!-- Useful Links -->
+- The REST API that this application uses: https://github.com/cauaspinheiro/gamepass-api
