@@ -1,12 +1,6 @@
 <!-- Headers -->
 
-<div style="text-align:center" >
-<h1 style="text-align:center">Xbox Gamepass Mobile App</h1>
-</div>
-
-<!-- Badges -->
-
-<!-- Description -->
+# Xbox Game Pass Mobile App
 
 A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game-pass) games library.
 
@@ -14,13 +8,9 @@ A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game
 
 <!-- Prints / Outputs -->
 
-<!-- Usage -->
-
 ## :video_game: Usage
 
 This app does not have any built app so far. If you want use the app you have to clone this repository locally and run the app yourself. For this, see the [Installation Topic](#construction_worker-installation).
-
-<!-- Installation -->
 
 ## :construction_worker: Installation
 
@@ -62,8 +52,6 @@ flutter pub get
 **That's it!** Now you can run the project on your local machine.
 
 For this, see the ["Run the app" topic](https://flutter.dev/docs/get-started/test-drive?tab=terminal) on Flutter's official documentation.
-
-<!-- About the Project -->
 
 ## :page_facing_up: About the Project
 
