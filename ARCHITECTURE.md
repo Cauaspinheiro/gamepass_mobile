@@ -6,7 +6,7 @@ This file contains the explanation of the logic used to structure de folders/fil
 
 This project was built based on the principles of [SOLID](https://en.wikipedia.org/wiki/SOLID) and [DDD](https://en.wikipedia.org/wiki/Domain-driven_design).
 
-For more details, see the [`/lib` Topic](#lib).
+For more details, see the [`/lib` Topic](#lib---flutter-application).
 
 ### Name conventions
 
@@ -42,7 +42,7 @@ The Flutter application, where most of the action happens.
 
 Contains all the business logic of the application.
 
-Where the [`/ui`](#ui) and the [`/infra`](#infra) layers are connected.
+Where the [`/ui`](#ui---application-view) and the [`/infra`](#infra---application-data-access) layers are connected.
 
 ### `/domain` - Application entities
 
@@ -63,7 +63,7 @@ Based in the Repository/Model logic:
 
 Contains all the interface logic of the app.
 
-Communicates with the [`/app`](#app) logic to retrieve the necessary data to display on the UI.
+Communicates with the [`/app`](#app---application-business-logic) logic to retrieve the necessary data to display on the UI.
 
 ## `pubspec.yaml` - Flutter configuration file
 
