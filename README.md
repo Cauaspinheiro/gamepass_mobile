@@ -1,4 +1,4 @@
-<!-- Headers -->
+![README Cover](/.github/cover.png)
 
 # Xbox Game Pass Mobile App
 
