@@ -66,13 +66,29 @@ Website: https://dart.dev/
 
 A composable, Future-based library for making HTTP requests. (Official repository)
 
-github: https://github.com/dart-lang/http
+Github: https://github.com/dart-lang/http
 
 #### youtube_player_flutter
 
 Flutter plugin for playing or streaming YouTube videos inline using the official iFrame Player API. (Official repository)
 
-github: https://github.com/sarbagyastha/youtube_player_flutter
+Github: https://github.com/sarbagyastha/youtube_player_flutter
+
+#### flutter_native_splash
+
+Flutter plugin that generates native code to customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more. (Official repository)
+
+Github: https://github.com/jonbhanson/flutter_native_splash
+
+> This dependency is not included in the `pubspec.yaml` file because of conflicts with the `flutter_launcher_icons` dependency. If you need to re-generate the splash screen, install this dependency again, generate the splash screen, then uninstall it.
+
+#### flutter_launcher_icons
+
+Flutter plugin that simplifies the task of updating your Flutter app's launcher icon. (Official repository)
+
+Github: https://github.com/fluttercommunity/flutter_launcher_icons
+
+> This dependency is not included in the `pubspec.yaml` file because of conflicts with the `flutter_native_splash` dependency. If you need to re-generate the launcher icon, install this dependency again, generate the launcher icon, then uninstall it.
 
 ## :construction_worker: Installation
 
