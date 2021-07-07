@@ -46,7 +46,7 @@ This project is licensed under the [MIT License](LICENSE)
 
 ## :test_tube: Technologies
 
-![Flutter](https://buttercms.com/static/images/tech_banners/Flutter.2d1998a6f272.png)
+![Flutter](https://www.4xtreme.com/wp-content/uploads/2020/03/fluttericon.png)
 
 ### Flutter
 
