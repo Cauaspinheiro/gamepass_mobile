@@ -6,7 +6,37 @@ A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game
 
 > This app does not have any connection with the Xbox Game Pass official app and was made for educational purposes only. If you want to see the real updated library please download the **official app**.
 
-<!-- Prints / Outputs -->
+## :iphone: Demo / Screenshots
+
+![Running App](.github/screen.gif)
+
+### Home
+
+<div style="display:flex; justify-content: space-around">
+
+<div style="width: 45%">
+  <img src=".github/home.jpeg" />
+</div>
+
+<div style="width: 45%">
+  <img src=".github/home-collections.jpeg" />
+</div>
+
+</div>
+
+### Game
+
+<div style="display:flex; justify-content: space-around">
+
+<div style="width: 45%">
+  <img src=".github/game-cover.jpeg" />
+</div>
+
+<div style="width: 45%">
+  <img src=".github/game-description.jpeg" />
+</div>
+
+</div>
 
 ## :video_game: Usage
 
