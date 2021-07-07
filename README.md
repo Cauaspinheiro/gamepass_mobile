@@ -12,31 +12,11 @@ A mobile app to browse the [Xbox Game Pass](https://www.xbox.com/en-us/xbox-game
 
 ### Home
 
-<div style="display:flex; justify-content: space-around">
-
-<div style="width: 45%">
-  <img src=".github/home.jpeg" />
-</div>
-
-<div style="width: 45%">
-  <img src=".github/home-collections.jpeg" />
-</div>
-
-</div>
+![Running App](.github/home.png)
 
 ### Game
 
-<div style="display:flex; justify-content: space-around">
-
-<div style="width: 45%">
-  <img src=".github/game-cover.jpeg" />
-</div>
-
-<div style="width: 45%">
-  <img src=".github/game-description.jpeg" />
-</div>
-
-</div>
+![Running App](.github/game.png)
 
 ## :video_game: Usage
 
