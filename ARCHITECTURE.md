@@ -68,7 +68,6 @@ Communicates with the [`/app`](#app---application-business-logic) logic to retri
 ## `pubspec.yaml` - Flutter configuration file
 
 Contains all the necessary configuration for Flutter and its dependencies. All the possible options are on the [official documentation](https://flutter.dev/docs/development/tools/pubspec).
-`
 
 `flutter_native_splash`: Configuration for the [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) dependency.
 
